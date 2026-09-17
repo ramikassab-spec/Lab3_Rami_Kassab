@@ -1,7 +1,18 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+
+
 header
 {display: flex;
      flex-direction: column;
      align-items: center;
+     padding: 1rem;
+     background-color: #2f5d3b;
 }
 
 
@@ -25,6 +36,22 @@ nav li
 
 .hero {
     text-align: center;
+}
+
+.footer {
+    background-color: #2f5d3b;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #2f5d3b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 .hero img {
@@ -60,6 +87,12 @@ nav li
     margin-bottom: 2rem;
 }
 
+.activity img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
 .plan {
     padding: 2rem 1.5rem;
     text-align: center;
@@ -83,7 +116,8 @@ nav li
 }
 
 .footer {
-    background-color: #f2f2f2;
+    background-color: #2f5d3b;
+    color: rgb(10, 0, 0);
     padding: 2rem 1.5rem;
     text-align: center;
     margin-top: 3rem;
@@ -104,3 +138,23 @@ nav li
 .footer-section p {
     margin: 0.25rem 0;
 }    
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 768px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+}
