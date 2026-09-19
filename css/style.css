@@ -1,8 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f2f2f2;
+    color: #1f2924;
+    background-color: #ffffff;
 }
 
 
@@ -11,150 +17,323 @@ header
 {display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 1rem;
-     background-color: #2f5d3b;
+     gap: 0.75rem;
+     padding: 1rem 1.5rem;
+     background-color: #ffffff;
+     color: #1f2924;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    filter: brightness(0);
 }
 
 
 nav ul
 {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
 }
 
 nav a
 {
     text-decoration: none;
-    color: black;
+    color: #1f2924;
+    font-weight: 600;
 }
 
-nav li
-{
-    margin-bottom: 10px;
-}
+
 
 .hero {
     text-align: center;
 }
 
-.footer {
-    background-color: #2f5d3b;
-    color: white;
-    padding: 1rem;
+.hero-content {
+    padding: 2rem 1.5rem;
     text-align: center;
+    background-color: #ffffff;
 }
 
+.hero-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+.hero-content p {
+    max-width: 35rem;
+    margin: 0 auto 1.5rem;
+}
 .hero-button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #2f5d3b;
-    color: white;
+    padding: 0.8rem 1.5rem;
+    background-color: #c58b45;
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 4px;
+    font-weight: 700;
+    border-radius: 8px;
 }
 
+
+
 .hero img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
 
 .intro {
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+    background-color: #ffffff;
 }
 
 .intro h2 {
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 
 .intro p {
-    margin-bottom: 1rem;
+    max-width: 760px;
+    margin: 0 auto 1.5rem;
     line-height: 1.6;
 }
 
 .activities {
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
+    background-color: #f5f2ea;
+}
+.activities > h2 {
+    margin-top: 0;
+    margin-bottom: 2rem;
     text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    font-size: 2rem;
 }
 
 .activity {
-    margin-bottom: 2rem;
+    max-width: 350px;
+    margin: 0 auto 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .activity img {
     width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
+    height: 220px;
+    object-fit: cover;
+}
+
+.activity h3 {
+    margin: 0;
+    padding: 1.25rem 1.25rem 0.5rem;
+    font-size: 1.25rem;
+}
+
+.activity p {
+    margin: 0;
+    padding: 0 1.25rem 1.5rem;
 }
 
 .plan {
-    padding: 2rem 1.5rem;
+    padding: 4rem 1.5rem;
     text-align: center;
-    max-width: 700px;
-    margin: 0 auto;
+    background-color: #ffffff;
 }
+
 .plan h2 {
+    margin-top: 0;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
+
 .plan p {
-    margin-bottom: 1rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
     line-height: 1.6;
 }
+
 .plan-button {
-  display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #2f5d3b;
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #c58b45;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 4px;  
+    font-weight: 700;
+    border-radius: 8px;
 }
 
 .footer {
-    background-color: #2f5d3b;
-    color: rgb(10, 0, 0);
-    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 1.5rem;
+    background-color: #23483a;
+    color: #ffffff;
     text-align: center;
-    margin-top: 3rem;
+}
+
+
+
+.footer-section {
+    margin: 0;
 }
 
 .footer h2 {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section {
-    margin-top: 2rem;
-}
-
-.footer-section h3 {
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
 }
 
 .footer-section p {
     margin: 0.25rem 0;
 }    
 
+.footer-section img {
+    width: 90px;
+    margin: 0 auto 1rem;
+}
+
 .footer ul {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .footer a {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
+
+
 
 @media (min-width: 768px) {
 
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    header img {
+        width: 70px;
+        height: auto;
+        filter: brightness(0);
+    }
+
     nav ul {
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
         gap: 2rem;
     }
+
+    .hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(24, 42, 35, 0.35);
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 1;
+    left: 4rem;
+    bottom: 4rem;
+    max-width: 500px;
+    padding: 0;
+    text-align: left;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.intro {
+    padding: 5rem 2rem;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.activities > h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 3rem;
+}
+
+.activity {
+    max-width: none;
+    margin: 0;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0 3rem;
+    padding: 5rem 4rem;
+    text-align: left;
+}
+
+.plan h2 {
+    grid-column: 1;
+    margin: 0 0 1rem;
+}
+
+.plan p {
+    grid-column: 1;
+    margin: 0;
+}
+
+.plan-button {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 4rem;
+    text-align: left;
+}
+
+.footer-section img {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 }
